@@ -1,6 +1,8 @@
 = group_cache_key
 
-Description goes here.
+Using this gem in an application using ActiveRecord will provide you with a 'cache_key' method on collections of models.
+
+Built by Saturn Flyer http://www.saturnflyer.com
 
 == Note on Patches/Pull Requests
  

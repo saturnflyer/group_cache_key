@@ -5,12 +5,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "group_cache_key"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{adds a cache_key method to ActiveRecord arrays}
+    gem.description = %Q{adds a cache_key method to ActiveRecord arrays}
     gem.email = "jim@saturnflyer.com"
     gem.homepage = "http://github.com/saturnflyer/group_cache_key"
     gem.authors = ["Jim Gay"]
-    gem.add_development_dependency "thoughtbot-shoulda"
+    gem.add_dependency 'activerecord'
+    gem.add_dependency 'activesupport'
+    # gem.add_development_dependency "thoughtbot-shoulda"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
