@@ -1,6 +1,21 @@
 = group_cache_key
 
-Using this gem in an application using ActiveRecord will provide you with a 'cache_key' method on collections of models.
+Using this gem in an application using ActiveRecord will provide you with a 'cache_key' 
+method on collections of models.
+
+The 'cache_key' will consist of:
+
+* the tableized name of the class of the first item
+* an MD5 hash of the ids in the collection
+* to_i on the max created_at date
+* to_i on the max updated_at date
+
+The 'cache_key' should look like:
+
+    'widgets/100-81dc9bdb52d04dc20036dbd8313ed055-1256853629-1256853637'
+    
+The resulting cache_key will be different if your group is sorted differently because 
+the MD5 hash is created according to the order given: no sorting is done to create the hash.
 
 Built by Saturn Flyer http://www.saturnflyer.com
 
