@@ -10,8 +10,8 @@ begin
     gem.email = "jim@saturnflyer.com"
     gem.homepage = "http://github.com/saturnflyer/group_cache_key"
     gem.authors = ["Jim Gay"]
-    gem.add_dependency 'activerecord'
-    gem.add_dependency 'activesupport'
+    gem.add_dependency 'activerecord', '>=2.1.0'
+    gem.add_dependency 'activesupport', '>=2.1.0'
     # gem.add_development_dependency "thoughtbot-shoulda"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
