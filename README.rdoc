@@ -16,6 +16,11 @@ The 'cache_key' should look like:
     
 The resulting cache_key will be different if your group is sorted differently because 
 the MD5 hash is created according to the order given: no sorting is done to create the hash.
+    
+If your collection is empty, the cache_key will return a key with the object_id. A 
+cache_key for an empty collection will look like:
+
+    'empty/13149280'
 
 Built by Saturn Flyer http://www.saturnflyer.com
 

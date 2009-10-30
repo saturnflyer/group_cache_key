@@ -6,7 +6,7 @@ ActiveRecord::Base.class_eval {
   Array.class_eval {
     def cache_key
       if self.empty?
-        'empty'
+        'empty/' + self.object_id.to_s
       else
         ids_hash = Digest::MD5.hexdigest(self.collect{|item| item.id }.to_s)
         update_timestamp = max {|a,b| a.updated_at <=> b.updated_at }.updated_at.to_i.to_s
