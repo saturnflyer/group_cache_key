@@ -22,7 +22,7 @@ class Widget < ActiveRecord::Base
   end
 end
 
-class GroupCacheKeyTest < Test::Unit::TestCase
+class GroupCacheKeyTest < MiniTest::Unit::TestCase
   def test_empty_collection_should_return_unique_string_representation
     @widgets = Widget.empty_find
     assert_equal("empty/#{@widgets.object_id}", @widgets.cache_key)

@@ -1,9 +1,6 @@
 require 'rubygems'
-require 'test/unit'
-
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-$LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'bundler/setup'
 require 'group_cache_key'
 
-class Test::Unit::TestCase
-end
+require 'minitest/unit'
+MiniTest::Unit.autorun
