@@ -4,7 +4,6 @@ Gem::Specification.new do |s|
   s.date = %q{2013-03-25}
   s.summary = %q{adds cache_key to collections}
   s.files = [
-             "Gemfile",
              "Rakefile",
              "VERSION",
              "lib/group_cache_key.rb"
