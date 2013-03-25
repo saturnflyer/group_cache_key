@@ -1,5 +1,5 @@
-require 'activerecord'
-require 'activesupport'
+require 'active_record'
+require 'active_support'
 require 'digest/md5'
 
 ActiveRecord::Base.class_eval {
