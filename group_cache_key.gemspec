@@ -3,7 +3,6 @@ Gem::Specification.new do |s|
   s.version = "0.4.0"
   s.platform = Gem::Platform::RUBY
   s.authors = ["Jim Gay", "Clemens Gruber"]
-  s.date = Time.now.utc.strftime('%Y-%m-%d')
   s.summary = "Adds cache_key to collections"
   s.files = [
              "Rakefile",
